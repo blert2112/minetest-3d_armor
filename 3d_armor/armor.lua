@@ -191,12 +191,6 @@ armor.set_player_armor = function(self, player)
 			end
 		end
 	end
-	if minetest.get_modpath("shields") then
-		armor_level = armor_level * 0.9
-	end
-	if material.type and material.count == #self.elements then
-		armor_level = armor_level * 1.1
-	end
 	armor_level = armor_level * ARMOR_LEVEL_MULTIPLIER
 	armor_heal = armor_heal * ARMOR_HEAL_MULTIPLIER
 	if #textures > 0 then
