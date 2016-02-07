@@ -11,7 +11,7 @@ ARMOR_MATERIALS = {
 	bronze = "default:bronze_ingot",
 	gold = "default:gold_ingot",
 }
-ARMOR_FIRE_PROTECT = false
+ARMOR_FIRE_PROTECT = true
 ARMOR_FIRE_NODES = {
 	{"default:lava_source",     5, 4},
 	{"default:lava_flowing",    5, 4},
