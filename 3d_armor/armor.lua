@@ -7,23 +7,16 @@ ARMOR_DESTROY = false
 ARMOR_LEVEL_MULTIPLIER = 1
 ARMOR_HEAL_MULTIPLIER = 1
 ARMOR_MATERIALS = {
-	wood = "group:wood",
-	cactus = "default:cactus",
 	steel = "default:steel_ingot",
 	bronze = "default:bronze_ingot",
-	diamond = "default:diamond",
 	gold = "default:gold_ingot",
-	mithril = "moreores:mithril_ingot",
-	crystal = "ethereal:crystal_ingot",
 }
-ARMOR_FIRE_PROTECT = minetest.get_modpath("ethereal") ~= nil
+ARMOR_FIRE_PROTECT = false
 ARMOR_FIRE_NODES = {
 	{"default:lava_source",     5, 4},
 	{"default:lava_flowing",    5, 4},
 	{"fire:basic_flame",        3, 4},
 	{"fire:permanent_flame",    3, 4},
-	{"ethereal:crystal_spike",  2, 1},
-	{"ethereal:fire_flower",    2, 1},
 	{"default:torch",           1, 1},
 }
 
@@ -43,12 +36,6 @@ if input then
 	dofile(worldpath.."/armor.conf")
 	input:close()
 	input = nil
-end
-if not minetest.get_modpath("moreores") then
-	ARMOR_MATERIALS.mithril = nil
-end
-if not minetest.get_modpath("ethereal") then
-	ARMOR_MATERIALS.crystal = nil
 end
 
 armor = {
