@@ -1,6 +1,5 @@
 ARMOR_MOD_NAME = minetest.get_current_modname()
 dofile(minetest.get_modpath(ARMOR_MOD_NAME).."/armor.lua")
-dofile(minetest.get_modpath(ARMOR_MOD_NAME).."/admin.lua")
 
 if ARMOR_MATERIALS.steel then
 	minetest.register_tool("3d_armor:helmet_steel", {

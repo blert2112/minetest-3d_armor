@@ -2,13 +2,6 @@ local use_moreores = minetest.get_modpath("moreores")
 
 -- Regisiter Shields
 
-minetest.register_tool("shields:shield_admin", {
-	description = "Admin Shield",
-	inventory_image = "shields_inv_shield_admin.png",
-	groups = {armor_shield=1000, armor_heal=100, armor_use=0},
-	wear = 0,
-})
-
 if ARMOR_MATERIALS.steel then
 	minetest.register_tool("shields:shield_steel", {
 		description = "Steel Shield",
